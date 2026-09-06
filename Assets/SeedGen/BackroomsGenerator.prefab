@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &384378387014030414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4902138001539531820}
+  - component: {fileID: 322476655403410282}
+  m_Layer: 0
+  m_Name: BackroomsGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4902138001539531820
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384378387014030414}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.93333, y: 1.35436, z: 2.42636}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &322476655403410282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384378387014030414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ce589ce0fa90a4c8a5c554a58ff992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackroomsChunkManager
+  seed: 12345
+  player: {fileID: 0}
+  chunkSize: 8
+  cellSize: 4
+  wallHeight: 4
+  zoneSize: 4
+  roomZoneChance: 0.12
+  hallwayOpenChance: 0.55
+  viewDistanceInChunks: 2
+  unloadDistanceInChunks: 2
+  maxGeneratedPerFrame: 3
+  guaranteedImmediateRadius: 1
+  enableFallThroughSafetyNet: 1
+  fallThroughYThreshold: -10
+  safetyNetRecoveryY: 1
+  originRebaseThreshold: 2000
+  style:
+    wallThickness: 0
+    baseboardHeight: 0
+    baseboardProtrusion: 0
+    pillarSize: 0
+    roomPillarChance: 0
+    hallwayPillarChance: 0
+    floorColliderThickness: 0
+    ceilingColliderThickness: 0
+  floorMaterial: {fileID: 2100000, guid: 8977f0a8b344b364bb336cab6fe81e91, type: 2}
+  wallMaterial: {fileID: 2100000, guid: 13ec6a1ce8f0ff74e89c12db7d39d51d, type: 2}
+  ceilingMaterial: {fileID: 2100000, guid: 1222b699c0175a84da26dc4723efcb54, type: 2}
+  addColliders: 1
