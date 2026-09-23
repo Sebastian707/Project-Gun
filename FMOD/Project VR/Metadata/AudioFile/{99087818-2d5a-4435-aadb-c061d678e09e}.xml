@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{99087818-2d5a-4435-aadb-c061d678e09e}">
+		<property name="assetPath">
+			<value>saturn-3-music-clair-de-lune-debussy-soft-piano-411227.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>285.19200000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b1e837a5-6430-4e42-a517-5ac01f43da9c}</destination>
+		</relationship>
+	</object>
+</objects>
