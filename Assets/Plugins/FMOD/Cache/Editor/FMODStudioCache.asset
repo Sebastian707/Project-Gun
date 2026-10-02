@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5281299991740651856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mosquito
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Mosquito
+  Guid:
+    Data1: 1097118960
+    Data2: 1157293588
+    Data3: 1379221920
+    Data4: 66465764
+  Banks:
+  - {fileID: 6846029250741786217}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11808
 --- !u!114 &-3579400131926040249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21,7 +48,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 6846029250741786217}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -42,10 +69,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639256834817094390
+  lastModified: 639261902632977137
   FileSizes:
   - Name: 
-    Value: 770
+    Value: 820
   Exists: 1
 --- !u!114 &-1106324395138568011
 MonoBehaviour:
@@ -84,13 +111,14 @@ MonoBehaviour:
   - {fileID: 6846029250741786217}
   EditorEvents:
   - {fileID: -3579400131926040249}
+  - {fileID: -5281299991740651856}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6846029250741786217}
   StringsBanks:
   - {fileID: -3330157690864137008}
   cacheVersion: 131860
-  cacheTime: 639256834817094390
+  cacheTime: 639261902632977137
   SerializableEventsDict:
   - key: event:/NewEvent
     index: 0
@@ -154,6 +182,6 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639256834817084297
+  lastModified: 639261902632940377
   FileSizes: []
   Exists: 1

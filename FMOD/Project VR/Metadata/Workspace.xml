@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Workspace" id="{b835ff97-0abd-44c6-9d32-8cd0eb8c663f}">
 		<property name="builtBanksOutputDirectory">
-			<value>../../../../../OneDrive/Documents/GitHub/Project-Gun/FMOD</value>
+			<value>../</value>
 		</property>
 		<relationship name="masterEventFolder">
 			<destination>{d5133f2f-8798-4e85-bb5f-3e0c8ba3ca4c}</destination>
