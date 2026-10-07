@@ -1,0 +1,21 @@
+Step 1:
+Add the “KeyPadRay” script to your first person camera and set the Screen Text variable to a game object of your choosing.
+
+Step 2:
+Drag the KeyPad prefab into your viewport. 
+
+Step 3: 
+Create a tag called “But”. Select all the objects named But 0-9 and give them the “But” tag.
+
+Step 4:
+Navigate to the game object named "Main"(this is within the KeyPad Prefab). This is where you can change keypad settings.
+
+Step 5: 
+Set the Code by changing the Num 1-4 variables or select Random Code.
+
+Step 6:
+Add the Set Active True and False variables. 
+.The “Set Active True” will be enabled when the correct code is inputted.
+.The “Set Active False” will be disabled when the correct code is inputted.
+
+The effect when the correct code is inputted can be changed within the script named "Keypad".

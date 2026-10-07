@@ -69,10 +69,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639261902632977137
+  lastModified: 639265323387644955
   FileSizes:
   - Name: 
-    Value: 820
+    Value: 908
   Exists: 1
 --- !u!114 &-1106324395138568011
 MonoBehaviour:
@@ -94,6 +94,33 @@ MonoBehaviour:
   - Name: 
     Value: 770
   Exists: 1
+--- !u!114 &-53199107292247558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ButtonClickFail
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ButtonClickFail
+  Guid:
+    Data1: 1218194054
+    Data2: 1283424010
+    Data3: -1549524314
+    Data4: -1408629847
+  Banks:
+  - {fileID: 6846029250741786217}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2142
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,16 +139,24 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: -3579400131926040249}
   - {fileID: -5281299991740651856}
+  - {fileID: -53199107292247558}
+  - {fileID: 7723062129840647632}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6846029250741786217}
   StringsBanks:
   - {fileID: -3330157690864137008}
   cacheVersion: 131860
-  cacheTime: 639261902632977137
+  cacheTime: 639265323387644955
   SerializableEventsDict:
   - key: event:/NewEvent
     index: 0
+  - key: event:/Mosquito
+    index: 1
+  - key: event:/ButtonClickFail
+    index: 2
+  - key: event:/ButtonClick
+    index: 3
 --- !u!114 &3242565570905357558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,6 +217,33 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639261902632940377
+  lastModified: 639265323387609322
   FileSizes: []
   Exists: 1
+--- !u!114 &7723062129840647632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ButtonClick
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ButtonClick
+  Guid:
+    Data1: 155930601
+    Data2: 1171524121
+    Data3: 1965649537
+    Data4: 891622716
+  Banks:
+  - {fileID: 6846029250741786217}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1123

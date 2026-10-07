@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{1257a76f-e654-4e5f-af73-3266de8689cc}">
+		<property name="assetPath">
+			<value>FailKeyPad.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.1420408163265305</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b1e837a5-6430-4e42-a517-5ac01f43da9c}</destination>
+		</relationship>
+	</object>
+</objects>
