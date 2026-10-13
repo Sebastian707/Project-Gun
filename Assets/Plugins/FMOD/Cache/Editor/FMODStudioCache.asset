@@ -69,11 +69,38 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639265323387644955
+  lastModified: 639274846737907282
   FileSizes:
   - Name: 
-    Value: 908
+    Value: 1010
   Exists: 1
+--- !u!114 &-3184410398927908926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footsteps/Footsteps
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Footsteps/Footsteps
+  Guid:
+    Data1: -1335269622
+    Data2: 1150826562
+    Data3: -663317355
+    Data4: -2047481163
+  Banks:
+  - {fileID: 6846029250741786217}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 420
 --- !u!114 &-1106324395138568011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +147,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2142
+  Length: 1250
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,13 +168,15 @@ MonoBehaviour:
   - {fileID: -5281299991740651856}
   - {fileID: -53199107292247558}
   - {fileID: 7723062129840647632}
+  - {fileID: -3184410398927908926}
+  - {fileID: 4818142275623107675}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6846029250741786217}
   StringsBanks:
   - {fileID: -3330157690864137008}
   cacheVersion: 131860
-  cacheTime: 639265323387644955
+  cacheTime: 639274846737907282
   SerializableEventsDict:
   - key: event:/NewEvent
     index: 0
@@ -157,6 +186,10 @@ MonoBehaviour:
     index: 2
   - key: event:/ButtonClick
     index: 3
+  - key: event:/Footsteps/Footsteps
+    index: 4
+  - key: event:/BakaMitai
+    index: 5
 --- !u!114 &3242565570905357558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +217,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 285192
+--- !u!114 &4818142275623107675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/BakaMitai
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/BakaMitai
+  Guid:
+    Data1: -63967032
+    Data2: 1333960129
+    Data3: -961886295
+    Data4: -1363230699
+  Banks:
+  - {fileID: 6846029250741786217}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 121080
 --- !u!114 &5026659827485606379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +277,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639265323387609322
+  lastModified: 639274846737876419
   FileSizes: []
   Exists: 1
 --- !u!114 &7723062129840647632
