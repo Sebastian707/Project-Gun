@@ -4,6 +4,9 @@
     "m_ObjectId": "353049b409eb4ac1b8e1cbea3611af36",
     "m_Properties": [
         {
+            "m_Id": "bb918259fcee494cb0c1e6aa1553dd94"
+        },
+        {
             "m_Id": "ed2d32e3f37d44389ee7551862bbb846"
         },
         {
@@ -378,10 +381,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -638.0,
-            "y": 308.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": -797.5999755859375,
+            "y": -20.800003051757813,
+            "width": 103.199951171875,
+            "height": 33.600006103515625
         }
     },
     "m_Slots": [
@@ -414,10 +417,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -595.0,
-            "y": 384.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": -755.2000122070313,
+            "y": 55.20001220703125,
+            "width": 104.79998779296875,
+            "height": 33.600006103515625
         }
     },
     "m_Slots": [
@@ -714,10 +717,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -634.0,
-            "y": 191.0,
-            "width": 0.0,
-            "height": 0.0
+            "x": -793.5999755859375,
+            "y": -137.60000610351563,
+            "width": 147.199951171875,
+            "height": 33.600006103515625
         }
     },
     "m_Slots": [
@@ -818,6 +821,9 @@
             "m_Id": "ed2d32e3f37d44389ee7551862bbb846"
         },
         {
+            "m_Id": "bb918259fcee494cb0c1e6aa1553dd94"
+        },
+        {
             "m_Id": "6fa27ab7e6dc44518f04d3e160dcfaa0"
         },
         {
@@ -876,6 +882,44 @@
     "m_DefaultValue": 1.0,
     "m_Labels": [],
     "m_LiteralMode": false
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty",
+    "m_ObjectId": "bb918259fcee494cb0c1e6aa1553dd94",
+    "m_Guid": {
+        "m_GuidSerialized": "3208e0ab-2dcd-431b-aaa2-9a07a745211a"
+    },
+    "promotedFromAssetID": "",
+    "promotedFromCategoryName": "",
+    "promotedOrdering": -1,
+    "m_Name": "Normal",
+    "m_DefaultRefNameVersion": 1,
+    "m_RefNameGeneratedByDisplayName": "Normal",
+    "m_DefaultReferenceName": "_Normal",
+    "m_OverrideReferenceName": "",
+    "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
+    "m_DismissedVersion": 0,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "hideConnector": false,
+    "m_Hidden": false,
+    "m_PerRendererData": false,
+    "m_customAttributes": [],
+    "m_Value": {
+        "m_SerializedTexture": "",
+        "m_Guid": ""
+    },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
+    "useTexelSize": true,
+    "isHDR": false,
+    "m_Modifiable": true,
+    "m_DefaultType": 0
 }
 
 {
@@ -1067,13 +1111,13 @@
     },
     "m_Name": "Triplanar",
     "m_DrawState": {
-        "m_Expanded": true,
+        "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -387.0,
-            "y": 182.0,
-            "width": 208.0,
-            "height": 432.0
+            "x": -542.4000244140625,
+            "y": -149.60000610351563,
+            "width": 208.00006103515625,
+            "height": 358.4000244140625
         }
     },
     "m_Slots": [
