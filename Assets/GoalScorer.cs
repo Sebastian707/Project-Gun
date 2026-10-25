@@ -10,8 +10,14 @@ public class GoalScorer : MonoBehaviour
     public TMP_Text scoreText;
     public int pointsPerGoal = 1;
 
-    [Header("Confetti")]
-    public ParticleSystem confetti;
+    [Header("Win Message")]
+    public int targetScore = 5;
+    public string winMessage = "YOU WIN!";
+    public bool stopScoringAtTarget = true;
+
+    [Header("Confetti Prefab")]
+    public ParticleSystem confettiPrefab;
+    public Transform confettiSpawnPoint;
 
     [Header("FMOD Sound")]
     public EventReference goalSound;
@@ -22,6 +28,8 @@ public class GoalScorer : MonoBehaviour
 
     private int score = 0;
     private bool goalScored = false;
+    private bool respawnInProgress = false;
+    private bool gameWon = false;
 
     private void Start()
     {
@@ -30,25 +38,25 @@ public class GoalScorer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (goalScored)
+        if (!other.CompareTag("Ball"))
             return;
 
-        if (!other.CompareTag("Ball"))
+        if (goalScored || respawnInProgress)
+            return;
+
+        if (gameWon && stopScoringAtTarget)
             return;
 
         goalScored = true;
 
-        // Add points
+        // Add points.
         score += pointsPerGoal;
         UpdateScore();
 
-        // Play confetti
-        if (confetti != null)
-        {
-            confetti.Play();
-        }
+        // Play confetti.
+        PlayConfetti();
 
-        // Play FMOD goal sound
+        // Play FMOD goal sound.
         if (!goalSound.IsNull)
         {
             RuntimeManager.PlayOneShot(
@@ -57,8 +65,54 @@ public class GoalScorer : MonoBehaviour
             );
         }
 
-        // Stop ball physics
-        Rigidbody rb = other.attachedRigidbody;
+        // Check whether the target score was reached.
+        if (!gameWon && score >= targetScore)
+        {
+            gameWon = true;
+
+            if (scoreText != null)
+                scoreText.text = winMessage;
+        }
+
+        // Reset the ball.
+        ResetBall(other.gameObject);
+    }
+
+    private void PlayConfetti()
+    {
+        if (confettiPrefab == null)
+        {
+            Debug.LogWarning("Confetti Prefab is not assigned!");
+            return;
+        }
+
+        Vector3 spawnPosition = confettiSpawnPoint != null
+            ? confettiSpawnPoint.position
+            : transform.position;
+
+        ParticleSystem effect = Instantiate(
+            confettiPrefab,
+            spawnPosition,
+            Quaternion.identity
+        );
+
+        effect.Play(true);
+
+        float lifetime = effect.main.duration
+            + effect.main.startLifetime.constantMax
+            + 1f;
+
+        Destroy(effect.gameObject, lifetime);
+    }
+
+    public void ResetBall(GameObject ball)
+    {
+        if (respawnInProgress || ball == null)
+            return;
+
+        respawnInProgress = true;
+
+        Rigidbody rb = ball.GetComponent<Rigidbody>();
 
         if (rb != null)
         {
@@ -66,22 +120,19 @@ public class GoalScorer : MonoBehaviour
             rb.angularVelocity = Vector3.zero;
         }
 
-        // Hide the ball
-        other.gameObject.SetActive(false);
-
-        // Respawn ball after delay
-        StartCoroutine(RespawnBall(other.gameObject, rb));
+        ball.SetActive(false);
+        StartCoroutine(RespawnBall(ball));
     }
 
-    private IEnumerator RespawnBall(GameObject ball, Rigidbody rb)
+    private IEnumerator RespawnBall(GameObject ball)
     {
         yield return new WaitForSeconds(respawnDelay);
 
         if (ballSpawnPoint == null)
         {
-            Debug.LogWarning(
-                "Ball Spawn Point is not assigned!"
-            );
+            Debug.LogWarning("Ball Spawn Point is not assigned!");
+            respawnInProgress = false;
+            goalScored = false;
             yield break;
         }
 
@@ -90,6 +141,8 @@ public class GoalScorer : MonoBehaviour
             ballSpawnPoint.rotation
         );
 
+        Rigidbody rb = ball.GetComponent<Rigidbody>();
+
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
@@ -97,14 +150,19 @@ public class GoalScorer : MonoBehaviour
         }
 
         ball.SetActive(true);
+
         goalScored = false;
+        respawnInProgress = false;
     }
 
     private void UpdateScore()
     {
-        if (scoreText != null)
-        {
+        if (scoreText == null)
+            return;
+
+        if (gameWon)
+            scoreText.text = winMessage;
+        else
             scoreText.text = "Score: " + score;
-        }
     }
 }
