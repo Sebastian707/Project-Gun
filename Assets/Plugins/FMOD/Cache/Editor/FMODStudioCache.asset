@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639281870162239561
+  lastModified: 639285552622742405
   FileSizes:
   - Name: 
-    Value: 1082
+    Value: 1160
   Exists: 1
 --- !u!114 &-5281299991740651856
 MonoBehaviour:
@@ -163,7 +163,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639281870162212968
+  lastModified: 639285552622727352
   FileSizes: []
   Exists: 1
 --- !u!114 &-1106324395138568011
@@ -264,13 +264,15 @@ MonoBehaviour:
   - {fileID: 8322371045258795294}
   - {fileID: 768775958840232317}
   - {fileID: 5450785790216469055}
+  - {fileID: 5422900786938294472}
+  - {fileID: 7568447252693984494}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1518456489898174814}
   StringsBanks:
   - {fileID: -8430735613719218894}
   cacheVersion: 131860
-  cacheTime: 639281870162239561
+  cacheTime: 639285552622742405
   SerializableEventsDict:
   - key: event:/Footsteps/Footsteps
     index: 0
@@ -288,6 +290,10 @@ MonoBehaviour:
     index: 6
   - key: event:/BOOM
     index: 7
+  - key: event:/Rain
+    index: 8
+  - key: event:/ClockTicking
+    index: 9
 --- !u!114 &768775958840232317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +420,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 420
+--- !u!114 &5422900786938294472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Rain
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Rain
+  Guid:
+    Data1: 1485133812
+    Data2: 1270055329
+    Data3: 732779700
+    Data4: 1402804599
+  Banks:
+  - {fileID: -1518456489898174814}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21042
 --- !u!114 &5450785790216469055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -486,6 +519,33 @@ MonoBehaviour:
   lastModified: 639274846737876419
   FileSizes: []
   Exists: 1
+--- !u!114 &7568447252693984494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ClockTicking
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/ClockTicking
+  Guid:
+    Data1: 1646402936
+    Data2: 1186591320
+    Data3: -1328132453
+    Data4: -526926905
+  Banks:
+  - {fileID: -1518456489898174814}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
 --- !u!114 &7723062129840647632
 MonoBehaviour:
   m_ObjectHideFlags: 0
