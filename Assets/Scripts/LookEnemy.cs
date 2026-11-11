@@ -4,6 +4,8 @@ using UnityEngine.AI;
 public class EnemyScript : MonoBehaviour
 {
     public float freezeTime = 10;
+    //same if insta stop
+    public float maxFrozenTime = 10;
     public float currFrozenTime;
     public GameObject player;
 
@@ -20,7 +22,11 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currFrozenTime += Time.deltaTime;
+        if (currFrozenTime <= maxFrozenTime)
+        {
+            currFrozenTime += Time.deltaTime;
+        }
+        
         if (isVisible())
         {
             //this.GetComponent<Renderer>().material.color = Color.white;
