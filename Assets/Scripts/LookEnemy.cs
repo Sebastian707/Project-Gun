@@ -7,9 +7,11 @@ public class EnemyScript : MonoBehaviour
     //same if insta stop
     public float maxFrozenTime = 10;
     public float currFrozenTime;
-    public GameObject player;
 
     public float freezeMulti = 2;
+
+    public GameObject player;
+    public float killPlayerDistance = 2;
     private NavMeshAgent agent;
     //https://www.youtube.com/watch?v=38BtpQWEct4
     [SerializeField] private Camera playerCamera;
@@ -22,6 +24,9 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if ((player.transform.position - this.transform.position).magnitude < killPlayerDistance) {
+            Debug.Log("Player is kill ");
+        }
         if (currFrozenTime <= maxFrozenTime)
         {
             currFrozenTime += Time.deltaTime;

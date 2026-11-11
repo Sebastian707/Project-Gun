@@ -54054,8 +54054,9 @@ MonoBehaviour:
   freezeTime: 10
   maxFrozenTime: 10.2
   currFrozenTime: 10
-  player: {fileID: 113385160}
   freezeMulti: 2
+  player: {fileID: 113385160}
+  killPlayerDistance: 2
   playerCamera: {fileID: 1379041038}
 --- !u!136 &1690562900
 CapsuleCollider:
