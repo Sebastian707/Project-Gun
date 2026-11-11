@@ -9,6 +9,8 @@ TagManager:
   - Ball
   - Hand
   - Ground
+  - BigBlock
+  - SmallBlock
   layers:
   - Default
   - TransparentFX
