@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639310637244771081
+  lastModified: 639312004107933798
   FileSizes:
   - Name: 
     Value: 1482
@@ -406,7 +406,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639310637244759805
+  lastModified: 639312004107918499
   FileSizes: []
   Exists: 1
 --- !u!114 &-1366655133397284634
@@ -549,28 +549,42 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -8430735613719218894}
   cacheVersion: 131860
-  cacheTime: 639310637244771081
+  cacheTime: 639312004107933798
   SerializableEventsDict:
   - key: event:/Footsteps/Footsteps
     index: 0
   - key: event:/ButtonClickFail
     index: 1
-  - key: event:/ScoreOne
-    index: 2
   - key: event:/BakaMitai
-    index: 3
+    index: 2
   - key: event:/ButtonClick
-    index: 4
+    index: 3
   - key: event:/NewEvent
-    index: 5
+    index: 4
   - key: event:/Mosquito
+    index: 5
+  - key: event:/WaterDrop
     index: 6
-  - key: event:/BOOM
+  - key: event:/Fire
     index: 7
-  - key: event:/Rain
+  - key: event:/NeckSnap
     index: 8
-  - key: event:/ClockTicking
+  - key: event:/New
     index: 9
+  - key: event:/Click
+    index: 10
+  - key: event:/BOOM
+    index: 11
+  - key: event:/ClockTicking
+    index: 12
+  - key: event:/SlidingDoor
+    index: 13
+  - key: event:/ScoreOne
+    index: 14
+  - key: event:/PuppetFootstep
+    index: 15
+  - key: event:/Rain
+    index: 16
 --- !u!114 &584884786027553578
 MonoBehaviour:
   m_ObjectHideFlags: 0
