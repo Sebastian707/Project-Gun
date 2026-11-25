@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - Hand
   - Ground
+  - Fuse
   layers:
   - Default
   - TransparentFX
@@ -41,7 +42,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Post
   m_SortingLayers:
   - name: Default
     uniqueID: 0
