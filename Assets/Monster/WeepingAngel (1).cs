@@ -44,8 +44,9 @@ public class WeepingAngel : MonoBehaviour
     NavMeshAgent agent;
 
     public float freezeTime = 10f;
-    float curr_freezeTime = 0f;
+    float currFreezeTime = 0f;
     public float decayMult = 2;
+    public float glanceBonus = 3f;
     float travelled;
     Vector3 lastPos;
     bool caught;
@@ -79,11 +80,16 @@ public class WeepingAngel : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"{curr_freezeTime} | {freezeTime}");
+        Debug.Log($"{currFreezeTime} | {freezeTime}");
         if (player == null || playerCamera == null || caught) return;
-
+        bool lastSeenState = IsSeen;
         IsSeen = visibility.IsSeenBy(playerCamera);
-        
+        // if glanced at monster then add glancebonus :)
+        if (lastSeenState != IsSeen & IsSeen)
+        {
+            currFreezeTime = (currFreezeTime + glanceBonus) % freezeTime;
+            
+        }
         // Dormant: wait for the first sighting
         if (!IsActivated)
         {
@@ -97,12 +103,12 @@ public class WeepingAngel : MonoBehaviour
             return;
         }
         if (IsSeen) {
-            if (curr_freezeTime > 0) curr_freezeTime -= Time.deltaTime * decayMult;
+            if (currFreezeTime > 0) currFreezeTime -= Time.deltaTime * decayMult;
 
         } else
         {
-            if (curr_freezeTime <= freezeTime) {
-                curr_freezeTime += Time.deltaTime;
+            if (currFreezeTime <= freezeTime) {
+                currFreezeTime += Time.deltaTime;
             }
             
         }
@@ -115,7 +121,7 @@ public class WeepingAngel : MonoBehaviour
         }
 
         // Unseen: move
-        if (curr_freezeTime < freezeTime) return;
+        if (currFreezeTime < freezeTime) return;
         float flatDist = DistanceToPlayer();
         if (flatDist <= catchDistance)
         {
