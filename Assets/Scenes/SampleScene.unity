@@ -87699,7 +87699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d12d98bcff9c488ae8a61178475c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeepingAngel
-  player: {fileID: 113385163}
+  player: {fileID: 1379041035}
   playerCamera: {fileID: 1379041038}
   speed: 5
   stepDistance: 1.2
