@@ -77401,7 +77401,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4103238a274618d4386127e03fe5c8e7, type: 2}
     - target: {fileID: 919132149155446097, guid: 061c176ac5452a245b0374cb6d0d32c3, type: 3}
       propertyPath: m_Name
-      value: rhyzome plant
+      value: skm_robot3_full 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -87699,7 +87699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6d12d98bcff9c488ae8a61178475c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeepingAngel
-  player: {fileID: 0}
+  player: {fileID: 113385163}
   playerCamera: {fileID: 1379041038}
   speed: 5
   stepDistance: 1.2
@@ -87715,6 +87715,7 @@ MonoBehaviour:
       m_Calls: []
   freezeTime: 10
   decayMult: 2
+  glanceBonus: 3
 --- !u!114 &919132147578401403
 MonoBehaviour:
   m_ObjectHideFlags: 0

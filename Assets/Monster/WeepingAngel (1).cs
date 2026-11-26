@@ -80,7 +80,7 @@ public class WeepingAngel : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"{currFreezeTime} | {freezeTime}");
+        //Debug.Log($"{currFreezeTime} | {freezeTime}");
         if (player == null || playerCamera == null || caught) return;
         bool lastSeenState = IsSeen;
         IsSeen = visibility.IsSeenBy(playerCamera);
