@@ -62,8 +62,8 @@ public class AngelPoser : MonoBehaviour
         foreach (var t in rigRoot.GetComponentsInChildren<Transform>(true))
         {
             if (t.name == "head") head = t;
-            else if (t.name == "thigh_l") thighL = t;
-            else if (t.name == "thigh_r") thighR = t;
+            else if (t.name == "thigh.l") thighL = t;
+            else if (t.name == "thigh.r") thighR = t;
         }
 
         // Measure which way the body faces relative to the root (before any pose is applied).
@@ -80,7 +80,7 @@ public class AngelPoser : MonoBehaviour
         if (rigRoot != gameObject && poseClips != null && poseClips.Length > 0)
             Debug.LogWarning("[AngelPoser] rigRoot differs from this object; make sure clips were generated from the same hierarchy.", this);
 
-        SetPose(0);
+        SetPose(5);
     }
 
     public void NextPose()
