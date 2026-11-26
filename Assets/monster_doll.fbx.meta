@@ -22,8 +22,8 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    importConstraints: 0
-    animationCompression: 1
+    importConstraints: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -89,7 +89,167 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: monster_doll(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: monster_doll(Clone)
+      position: {x: 0, y: 2.3177814, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: upperbody
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0.00799098}
+      rotation: {x: 0.7071067, y: -0.00000008429368, z: -0.00000008429368, w: 0.7071068}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: head
+      parentName: upperbody
+      position: {x: -0, y: 0.007874279, z: 0}
+      rotation: {x: -3.5527137e-15, y: 0.000000119209275, z: -4.235165e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head_end
+      parentName: head
+      position: {x: -0, y: 0.007301252, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: collar.l
+      parentName: upperbody
+      position: {x: -0, y: 0.007874279, z: 0}
+      rotation: {x: 0.00000035762793, y: -0.00000020357743, z: 0.81136596, w: 0.5845385}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm.l
+      parentName: collar.l
+      position: {x: -4.47035e-10, y: 0.003637148, z: 3.1974422e-16}
+      rotation: {x: -0.00000007622213, y: 0.000000095960935, z: -0.19632266, w: 0.9805394}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerarm.l
+      parentName: upperarm.l
+      position: {x: 6.705514e-10, y: 0.008770323, z: -4.2632563e-16}
+      rotation: {x: 0.00000002917082, y: -0.00000017469353, z: 0.039641906, w: 0.999214}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hand.l
+      parentName: lowerarm.l
+      position: {x: 8.940674e-10, y: 0.007285312, z: -5.684342e-16}
+      rotation: {x: 0.000000064079, y: 0.0000001437725, z: 0.07112877, w: 0.99746716}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: hand.l_end
+      parentName: hand.l
+      position: {x: -0, y: 0.0038684101, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: collar.r
+      parentName: upperbody
+      position: {x: -0, y: 0.007874279, z: 0}
+      rotation: {x: -0.0000001192093, y: -0.0000002434575, z: 0.81136596, w: -0.5845386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upperarm.r
+      parentName: collar.r
+      position: {x: 4.47035e-10, y: 0.003637148, z: 3.5527135e-16}
+      rotation: {x: 0.000000015972939, y: -0.000000067556584, z: 0.1963226, w: 0.9805394}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerarm.r
+      parentName: upperarm.r
+      position: {x: -6.705514e-10, y: 0.008770323, z: -2.842171e-16}
+      rotation: {x: 0.000000029170812, y: 0.00000017469355, z: -0.039641906, w: 0.999214}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hand.r
+      parentName: lowerarm.r
+      position: {x: -8.940674e-10, y: 0.007285312, z: 0}
+      rotation: {x: 0.000000064079, y: -0.0000001437725, z: -0.07112877, w: 0.99746716}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: hand.r_end
+      parentName: hand.r
+      position: {x: -0, y: 0.0038684101, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowerbody
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0.00799098}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis.l
+      parentName: lowerbody
+      position: {x: -0, y: 0.006, z: 0}
+      rotation: {x: 0.00000008732164, y: -0.00000006415266, z: 0.43469653, w: 0.900577}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: thigh.l
+      parentName: pelvis.l
+      position: {x: -1.4901157e-10, y: 0.0019237833, z: 2.2204459e-17}
+      rotation: {x: -0.000000036978097, y: 0.000000018289592, z: -0.4017826, w: 0.91573507}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: shin.l
+      parentName: thigh.l
+      position: {x: 7.4505874e-11, y: 0.009852835, z: -9.7699626e-17}
+      rotation: {x: -0.00000006448684, y: 0.000000023265581, z: -0.0362306, w: 0.99934345}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: foot.l
+      parentName: shin.l
+      position: {x: -1.1074475e-16, y: 0.011249565, z: 4.3441762e-17}
+      rotation: {x: -0.69398624, y: 0.041542664, z: 0.042949677, w: 0.71750444}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: foot.l_end
+      parentName: foot.l
+      position: {x: -0, y: 0.003023255, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pelvis.r
+      parentName: lowerbody
+      position: {x: -0, y: 0.006, z: 0}
+      rotation: {x: 0.00000008732164, y: 0.00000006415266, z: -0.43469653, w: 0.900577}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: thigh.r
+      parentName: pelvis.r
+      position: {x: 1.4901157e-10, y: 0.0019237833, z: 2.2204459e-17}
+      rotation: {x: -0.000000036978097, y: -0.000000018289592, z: 0.4017826, w: 0.91573507}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: shin.r
+      parentName: thigh.r
+      position: {x: -7.4505874e-11, y: 0.009852835, z: -9.7699626e-17}
+      rotation: {x: -0.00000006448684, y: -0.000000023265581, z: 0.0362306, w: 0.99934345}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: foot.r
+      parentName: shin.r
+      position: {x: 1.1074475e-16, y: 0.011249565, z: 4.3441762e-17}
+      rotation: {x: -0.69398624, y: -0.041542664, z: -0.042949677, w: 0.71750444}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: foot.r_end
+      parentName: foot.r
+      position: {x: -0, y: 0.003023255, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder
+      parentName: monster_doll(Clone)
+      position: {x: -0, y: 1.672663, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 10.9673, y: 4.1792, z: 6.2379}
+    - name: Cylinder.001
+      parentName: monster_doll(Clone)
+      position: {x: 0.00000023841858, y: 0, z: 0}
+      rotation: {x: 0.48167577, y: 0.5176761, z: -0.51767606, w: -0.48167565}
+      scale: {x: 7.2155294, y: 7.210647, z: 32.662754}
+    - name: Cylinder.002
+      parentName: monster_doll(Clone)
+      position: {x: -0.000000029802322, y: 0, z: 0}
+      rotation: {x: -0.70635617, y: -0.032573704, z: 0.032573693, w: 0.7063561}
+      scale: {x: 7.2155294, y: 7.210647, z: 32.66275}
+    - name: Cylinder.003
+      parentName: monster_doll(Clone)
+      position: {x: 0.00000023841858, y: 0, z: 0}
+      rotation: {x: 0.5176752, y: 0.4816768, z: 0.4816767, w: 0.517675}
+      scale: {x: 7.2155, y: 7.210647, z: 32.662754}
+    - name: Cylinder.004
+      parentName: monster_doll(Clone)
+      position: {x: -0.000000029802322, y: 0, z: 0}
+      rotation: {x: -0.70635617, y: 0.032573696, z: -0.03257369, w: 0.7063561}
+      scale: {x: 99.99999, y: 100, z: 99.99999}
+    - name: Sphere
+      parentName: monster_doll(Clone)
+      position: {x: 0.08909924, y: 2.1225185, z: 0.1424128}
+      rotation: {x: -0.46474764, y: 0.53292567, z: 0.5329252, w: 0.464748}
+      scale: {x: 4.403587, y: 4.1509523, z: 2.1964877}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -100,13 +260,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
