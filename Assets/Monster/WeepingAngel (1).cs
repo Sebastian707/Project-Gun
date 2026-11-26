@@ -87,7 +87,7 @@ public class WeepingAngel : MonoBehaviour
         // if glanced at monster then add glancebonus :)
         if (lastSeenState != IsSeen & IsSeen)
         {
-            currFreezeTime = (currFreezeTime + glanceBonus) % freezeTime;
+            currFreezeTime = (currFreezeTime - glanceBonus + freezeTime) % freezeTime;
             
         }
         // Dormant: wait for the first sighting
