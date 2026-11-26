@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{5d31d018-a783-49ff-8e15-bba8958ecf20}">
+		<property name="assetPath">
+			<value>freesound_community-radio-static-6382 - Trimmed.wav</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{b1e837a5-6430-4e42-a517-5ac01f43da9c}</destination>
+		</relationship>
+	</object>
+</objects>
