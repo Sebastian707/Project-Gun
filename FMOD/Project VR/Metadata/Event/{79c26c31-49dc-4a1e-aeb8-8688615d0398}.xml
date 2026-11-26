@@ -164,6 +164,18 @@
 		<property name="distanceRolloffType">
 			<value>3</value>
 		</property>
+		<property name="minimumDistance">
+			<value>0.300000012</value>
+		</property>
+		<property name="maximumDistance">
+			<value>0.310000002</value>
+		</property>
+		<property name="soundSize">
+			<value>0.25</value>
+		</property>
+		<property name="minimumExtent">
+			<value>30</value>
+		</property>
 	</object>
 	<object class="MixerBusFader" id="{2dbcc3ce-5bfa-4b58-bafc-88e0060571af}" />
 </objects>
