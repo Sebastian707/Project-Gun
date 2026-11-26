@@ -29,7 +29,7 @@ public class PadlockController : MonoBehaviour
         currentValues[wheelIndex] = (currentValues[wheelIndex] + 1) % 10;
 
         // Rotate the wheel visual by 36 degrees (360 degrees / 10 numbers = 36)
-        wheels[wheelIndex].Rotate(Vector3.up, 36f, Space.Self);
+        wheels[wheelIndex].Rotate(Vector3.up, -36f, Space.Self);
 
         CheckCombination();
     }
@@ -40,13 +40,14 @@ public class PadlockController : MonoBehaviour
         currentValues[wheelIndex] = (currentValues[wheelIndex] - 1 + 10) % 10;
 
         // Rotate back by 36 degrees (sine 360/10 is 36)
-        wheels[wheelIndex].Rotate(Vector3.up, -36f, Space.Self);
+        wheels[wheelIndex].Rotate(Vector3.up, 36f, Space.Self);
 
         CheckCombination();
     }
 
     void CheckCombination()
     {
+        //Debug.Log($"Current Code: {currentValues[0]} {currentValues[1]} {currentValues[2]} {currentValues[3]}");
         for (int i = 0; i < wheels.Length; i++)
         {
             if (currentValues[i] != correctCombination[i])
